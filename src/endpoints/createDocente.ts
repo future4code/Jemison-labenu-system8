@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import connection from "../connection";
+import connection from "../database/connection";
 
 //Trocar void por Docente
 export default async function createEstudante(req: Request, res: Response):Promise<void> {

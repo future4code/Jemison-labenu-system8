@@ -1,6 +1,6 @@
 import { docente } from './../types'; //Verificar o import do caminho correto
 import {Request, Response} from "express"
-import connection from '../connection';
+import connection from "../database/connection";
 
 
 export default async function getTurma (req: Request, res: Response):Promise<void> {

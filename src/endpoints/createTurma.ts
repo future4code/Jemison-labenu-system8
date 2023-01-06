@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import connection from "../connection";
+import connection from "../database/connection";
 
 //Substituir o void por Turma
 export default async function createTurma(req: Request, res: Response):Promise<void> {
