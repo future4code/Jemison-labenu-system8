@@ -1,4 +1,3 @@
-
 import { Usuario } from "./Usuario";
 
 export class Docente extends Usuario{

@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import connection from "../database/connection";
 
-//Substituir o void por Turma
 export default async function createTurma(req: Request, res: Response):Promise<void> {
     try {
         const {nome, docentes, estudantes, modulo} = req.body
