@@ -1,4 +1,4 @@
-import { docente } from './../types'; //Verificar o import do caminho correto
+import { Docente } from "../class/Docente";
 import {Request, Response} from "express"
 import connection from "../database/connection";
 
@@ -7,7 +7,7 @@ export default async function getTurma (req: Request, res: Response):Promise<voi
     try {
         const {name} = req.query   
 
-        const characters: docente[] = await connection ("DOCENTE")
+        const characters: Docente[] = await connection ("DOCENTE")
     
         res.send(characters)
     } catch (error) {
